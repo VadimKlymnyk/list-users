@@ -1,38 +1,68 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 80px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
 }
-
-.App-link {
+.header-nav h1{
   color: #61dafb;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container ul{
+  padding: 0;
+}
+
+.button-add-user, .button-add-user:focus, .button-add-user:hover{
+  margin-top: 10px;
+  background-color: #282c34;
+  color: #61dafb;
+  display: flex;
+  border-radius: 5px;
+}
+
+.container-user{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  background: #ccccff;
+}
+
+.ant-avatar-icon{
+  margin-right: 10px;
+}
+
+.user-information, .user-extra{
+  display: flex;
+  align-items: center;
+}
+
+.user-name, .description{
+  display: flex;
+}
+
+.user-name h3{
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
